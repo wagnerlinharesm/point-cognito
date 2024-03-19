@@ -14,7 +14,7 @@ terraform {
 resource "aws_cognito_user_pool" "cognito_user_pool" {
   name = "point"
   lambda_config {
-    pre_sign_up = "arn:aws:lambda:us-east-2:644237782704:function:pre-signup-point"
+    pre_sign_up = "arn:aws:lambda:us-east-2:644237782704:function:point_lambda_pre_sign_up"
   }
   password_policy {
     minimum_length = 6
